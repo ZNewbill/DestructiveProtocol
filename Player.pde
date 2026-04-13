@@ -9,6 +9,8 @@ class Player extends AABB {
   
   float slowMoCooldown = 1;
   boolean isSlowMo = false;
+  float xDirection = 0, yDirection = 0;
+  float moveAngle;
 
   Player(float xPos, float yPos) {
     x = xPos;
@@ -67,23 +69,29 @@ class Player extends AABB {
     if (Keyboard.isDown(Keyboard.A)) {
       if (canMove) {
         velocity.x = -400;
+        xDirection = -1;
       }
     }
     if (Keyboard.isDown(Keyboard.D)) {
       if (canMove) {
         velocity.x = 400;
+        xDirection = 1;
       }
     }
     if (Keyboard.isDown(Keyboard.W)) {
       if (canMove) {
         velocity.y = -400;
+        yDirection = -1;
       }
     }
     if (Keyboard.isDown(Keyboard.S)) {
       if (canMove) {
         velocity.y = 400;
+        yDirection = 1;
       }
     }
+    
+    moveAngle = atan2(xDirection, yDirection);
 
     x += velocity.x * dt * slowMoFactor;
     y += velocity.y * dt * slowMoFactor;
@@ -99,7 +107,7 @@ class Player extends AABB {
     fill(#26DE30);
     pushMatrix();
     translate(x, y);
-    rotate(angleToMouse);
+    rotate(moveAngle);
     rect(-halfW, -halfH, w, h);
     popMatrix();
   }
