@@ -1,4 +1,4 @@
-//a Dungeon Crawler First Person Shooter by Willow (Zander Newbill)
+//a Dungeon Crawler First Person Shooter by Willow (Zander) Newbill
 //copyright 2026
 float dt, prevTime = 0;
 boolean leftPressed, pLeftPressed, rightPressed, pRightPressed;
