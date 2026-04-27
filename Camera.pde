@@ -2,7 +2,7 @@ class Camera {
  
   float x, y, z;
   Player target;
-  float tx, ty; // Target's x and y coordinates.
+  float tx, ty, tz; // Target's x and y coordinates.
   
   Camera(Player p) {
     target = p;

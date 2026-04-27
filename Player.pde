@@ -91,6 +91,77 @@ class Player extends AABB {
       }
     }
     
+    //PUT THE STATE MACHINE YA FUCKASS
+     Zander Newbill Weapon State machine
+//create a state machine that allows the player to change which weapon they're using
+
+//CREATE weaponType variable
+//CREATE PISTOL_STATE SET variable to 1
+//CREATE SHOTGUN_STATE SET variable to 2
+//CREATE ASSRIFLE_STATE SET variable to 3
+//CREATE ROCKETLAUNCHER_STATE SET variable to 4
+//CREATE assRifleFireType variable set to 1
+//CREATE maxAmmo variable //this changes based on weapon type
+//CREATE currAmmo variable //this decreases as bullets are fired
+//CREATE maxMags variable
+//CREATE currMags variable
+//CREATE damage variable //changes based on weapon type
+
+
+//ON game start {
+//  currAmmo = maxAmmo
+//  currMags = maxMags
+//}
+
+//SET weaponType to 1
+//if(weaponType == 1) {
+//SET maxAmmo to 36
+//SET maxMags to 3
+//SET damage to 15
+//  If(mouseLeftPressed.onDown){
+//    bullet b = new bullet()
+//    bullets.add(b)
+//    currAmmo--
+//  }
+//}
+
+//if(weaponType == 2) {
+//  SET maxAmmo to 24
+//  SET maxMags to 3
+//  SET damage to 24
+//  If(mouseLeftPressed.onDown){
+//    bullet b = new bullet()
+//    bullets.add(b)
+//    currAmmo--
+//  }
+//}
+
+//if(weaponType == 3) {
+//  SET maxAmmo to 64
+//  SET maxMags to 3
+//  SET damage to 35
+//  if(assRifleFireType == 1) {
+//    if(mouseLeftPressed.onDown) {
+//      bullet b = new bullet
+//      bullets.add(b)
+//      currAmmo--
+//    }
+//  }
+//if(assRifleFireType == 2) {
+//    if(mouseLeftPressed.isDown) {
+//      bullet b = new bullet
+//      bullets.add(b)
+//      currAmmo --
+//    }
+//  }
+//}
+
+//if(weaponType == 4) {
+//  SET maxAmmo to 8
+//  SET maxMags to 8
+//  SET damage to 85
+//}
+    
     moveAngle = atan2(xDirection, yDirection);
 
     x += velocity.x * dt * slowMoFactor;

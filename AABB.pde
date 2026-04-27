@@ -1,5 +1,5 @@
 class AABB {
-  float x, y, w, h; // Location and Size of each AABB object.
+  float x, y, z, w, h, d; // Location and Size of each AABB object.
   float halfW, halfH;
   //float angle;
 
@@ -7,6 +7,8 @@ class AABB {
   float edgeR;
   float edgeT;
   float edgeB;
+  float edgeF;
+  float edgeZ;
 
   PVector velocity = new PVector();
   boolean isDead = false;

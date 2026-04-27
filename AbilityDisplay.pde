@@ -1,6 +1,6 @@
 class AbilityDisplay {
 
-  float x, y, w = 100, h = 100;
+  float x, y, z, w = 100, h = 100, d = 100;
   PImage img, mask;
 
   float cooldownStamp;
