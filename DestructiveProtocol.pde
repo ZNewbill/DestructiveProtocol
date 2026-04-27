@@ -15,7 +15,7 @@ AbilityDisplay ability1;
 SceneInventory sceneInventory;
 
 void setup() {
-  size(1000, 800); 
+  size(1000, 800, P3D); 
   player = new Player(width/2, height/2);
   camera = new Camera(player);
   

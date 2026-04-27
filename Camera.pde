@@ -1,6 +1,6 @@
 class Camera {
  
-  float x, y;
+  float x, y, z;
   Player target;
   float tx, ty; // Target's x and y coordinates.
   
