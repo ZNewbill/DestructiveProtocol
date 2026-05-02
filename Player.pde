@@ -92,7 +92,7 @@ class Player extends AABB {
     }
     
     //PUT THE STATE MACHINE YA FUCKASS
-     Zander Newbill Weapon State machine
+    //Willow (Zander) Newbill Weapon State machine
 //create a state machine that allows the player to change which weapon they're using
 
 //CREATE weaponType variable
