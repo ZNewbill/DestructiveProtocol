@@ -94,45 +94,47 @@ class Player extends AABB {
     //PUT THE STATE MACHINE YA FUCKASS
     //Willow (Zander) Newbill Weapon State machine
 //create a state machine that allows the player to change which weapon they're using
+//class WeaponChanger {
+// int weaponType = 1;
+//final int PISTOL_STATE = 1;
+//final int SHOTGUN_STATE = 2;
+//final int ASSRIFLE_STATE = 3;
+//final int ROCKETLAUNCHER_STATE = 4;
+//int assRifleFireType = 1;
+//int maxAmmo; //this changes based on weapon type
+//int currAmmo; //this decreases as bullets are fired
+//int ammoPerMag; 
+//int maxMags;
+//int currMags;
+//int damage; //changes based on weapon type
 
-//CREATE weaponType variable
-//CREATE PISTOL_STATE SET variable to 1
-//CREATE SHOTGUN_STATE SET variable to 2
-//CREATE ASSRIFLE_STATE SET variable to 3
-//CREATE ROCKETLAUNCHER_STATE SET variable to 4
-//CREATE assRifleFireType variable set to 1
-//CREATE maxAmmo variable //this changes based on weapon type
-//CREATE currAmmo variable //this decreases as bullets are fired
-//CREATE maxMags variable
-//CREATE currMags variable
-//CREATE damage variable //changes based on weapon type
+//   WeaponChanger () {
+//  currAmmo = maxAmmo;
+//  currMags = maxMags;
+  
 
-
-//ON game start {
-//  currAmmo = maxAmmo
-//  currMags = maxMags
-//}
 
 //SET weaponType to 1
 //if(weaponType == 1) {
-//SET maxAmmo to 36
-//SET maxMags to 3
-//SET damage to 15
-//  If(mouseLeftPressed.onDown){
-//    bullet b = new bullet()
-//    bullets.add(b)
-//    currAmmo--
+//maxAmmo = 36;
+//maxMags = 3;
+//ammoPerMag = 12;
+//damage = 15;
+//  if(mousePressed.leftPressed == true){
+//    Bullet b = new bullet();
+//    bullets.add(b);
+//    currAmmo--;
 //  }
 //}
 
 //if(weaponType == 2) {
-//  SET maxAmmo to 24
-//  SET maxMags to 3
-//  SET damage to 24
-//  If(mouseLeftPressed.onDown){
-//    bullet b = new bullet()
-//    bullets.add(b)
-//    currAmmo--
+//maxAmmo = 24;
+//maxMags = 3;
+//damage = 24;
+//  if(mousePressed){
+//    bullet b = new bullet();
+//    bullets.add(b);
+//   currAmmo--;
 //  }
 //}
 
@@ -161,6 +163,8 @@ class Player extends AABB {
 //  SET maxMags to 8
 //  SET damage to 85
 //}
+  }
+}
     
     moveAngle = atan2(xDirection, yDirection);
 
