@@ -92,7 +92,7 @@ class Player extends AABB {
     }
     
     //PUT THE STATE MACHINE YA FUCKASS
-    //Willow (Zander) Newbill Weapon State machine
+     Zander Newbill Weapon State machine
 //create a state machine that allows the player to change which weapon they're using
 
 //CREATE weaponType variable
@@ -188,41 +188,4 @@ class Player extends AABB {
     float dy = mouseY - y + camera.y;
     angleToMouse = atan2(dy, dx);
   }
-}
-
-class Camera {
- 
-  float x, y, z;
-  Player target;
-  float lookX, lookY, lookZ; // Target's x and y coordinates.
-  float pitch = 0;
-  float yaw = 0;
-  float roll = 0;
-  float speed = .003;
-  
-  lookX = position.x + sin(yaw) * cos(pitch);
-    lookY = position.y + sin(pitch);
-    lookZ = position.z + -cos(yaw) * cos(pitch);
-  
-  Camera(position.x, position.y, position.z, x, y, z, 0, 1, 0) {
-    target = p;
-    lookX = target.x - width/2;
-    lookY = target.y - height/2;
-    x = lookX;
-    y = lookY;
-  }
-  
-  void update() {
-    lookX = target.x - width/2;
-    lookY = target.y - height/2;
-    
-    
-    // For Camera Easing Effect
-    float dx = lookX - x;
-    float dy = lookY - y;   
-    x += dx * 0.1;
-    y += dy * 0.1;
-    
-  }
-  
 }
