@@ -11,6 +11,7 @@ class Player extends AABB {
   boolean isSlowMo = false;
   float xDirection = 0, yDirection = 0;
   float moveAngle;
+  int firingMode = 1;
 
   Player(float xPos, float yPos) {
     x = xPos;
@@ -46,6 +47,14 @@ class Player extends AABB {
     if(leftPressed && !pLeftPressed) {
       Bullet b = new Bullet(x, y, angleToMouse);
       bullets.add(b);
+    }
+    if(rightPressed && !pRightPressed) {
+      if(firingMode == 1) {
+       firingMode = 2; 
+      }
+      if(firingMode == 2) {
+       firingMode = 1; 
+      }
     }
 
     if(Keyboard.onDown(Keyboard.Q)) {
@@ -91,7 +100,9 @@ class Player extends AABB {
       }
     }
     
-    //PUT THE STATE MACHINE YA FUCKASS
+    
+    
+    //PUT THE STATE MACHINE HERE YA FUCKASS
     //Willow (Zander) Newbill Weapon State machine
 //create a state machine that allows the player to change which weapon they're using
 //class WeaponChanger {
@@ -163,8 +174,8 @@ class Player extends AABB {
 //  SET maxMags to 8
 //  SET damage to 85
 //}
-  }
-}
+//  }
+//}
     
     moveAngle = atan2(xDirection, yDirection);
 
