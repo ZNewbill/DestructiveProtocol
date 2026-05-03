@@ -7,8 +7,8 @@ class AABB {
   float edgeR;
   float edgeT;
   float edgeB;
-  float edgeF;
-  float edgeZ;
+  //float edgeF;
+  //float edgeZ;
 
   PVector velocity = new PVector();
   boolean isDead = false;
